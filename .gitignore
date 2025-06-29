@@ -1,0 +1,50 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Node modules (frontend and backend)
+**/node_modules/
+
+# Build output
+dist/
+build/
+dist-ssr/
+
+# Environment files
+.env
+.env.*.local
+*.local
+
+# OS and Editor junk files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# IDE / Editor folders
+.vscode/*
+!.vscode/extensions.json
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Testing / Coverage
+coverage/
+*.lcov
+
+# Tailwind JIT debug log (optional)
+.tailwind-debug.log
+
+# Optional: macOS folder attributes
+.AppleDouble
+.LSOverride
+
+# Optional: Linux trash
+.Trash-*
