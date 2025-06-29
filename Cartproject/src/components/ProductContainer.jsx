@@ -7,7 +7,7 @@ function ProductContainer() {
 
   async function fetchData() {
     try {
-      const response = await axios.get("http://localhost:3000/products");
+      const response = await axios.get("https://ecom-fullstack-project.onrender.com/products");
       setData(response?.data?.products); // Fix: correctly access the array
       console.log(response?.data?.products);
     } catch (err) {

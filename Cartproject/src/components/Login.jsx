@@ -48,7 +48,7 @@ export default function Login() {
 
     //  Axios throws an error automatically when it receives a non-2xx status.
     try {
-      const res = await axios.post("http://localhost:3000/login", form);
+      const res = await axios.post("https://ecom-fullstack-project.onrender.com/login", form);
       if (res.status == 200) {
         const generatedToken = res?.data?.accessToken;
         localStorage.setItem("token", generatedToken);

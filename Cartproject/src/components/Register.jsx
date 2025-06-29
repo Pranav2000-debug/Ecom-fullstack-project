@@ -86,7 +86,7 @@ export default function Register() {
       const { confirmPassword, ...cleanedForm } = form;
       console.log("Sending to backend:", cleanedForm);
 
-      const res = await axios.post("http://localhost:3000/signup", cleanedForm);
+      const res = await axios.post("https://ecom-fullstack-project.onrender.com/signup", cleanedForm);
       console.log("Backend response:", res.data);
     } catch (err) {
       console.log("Error submitting form:", err);
